@@ -1,5 +1,3 @@
-export type DataPoint = number[];
-
 export type DataCluster<DataType> = {
 	mean: DataType;
 	points: DataType[];
@@ -130,7 +128,7 @@ function zip<U, V>(array1: U[], array2: V[]): [U, V][] {
 	return result;
 }
 
-function distanceBetweenPoints(p1: DataPoint, p2: DataPoint) {
+function distanceBetweenPoints(p1: number[], p2: number[]) {
 	return Math.pow(
 		zip(p1, p2)
 			.map(([coord1, coord2]) => Math.pow(coord2 - coord1, 2))
