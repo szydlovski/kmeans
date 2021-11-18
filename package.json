@@ -1,6 +1,6 @@
 {
   "name": "@szydlovski/kmeans",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "an implementation of the kmeans quantization algorithm",
   "main": "build/kmeans.js",
   "scripts": {

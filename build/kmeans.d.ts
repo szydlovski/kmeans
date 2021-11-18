@@ -1,7 +1,6 @@
-export declare type DataPoint = number[];
-export declare type DataCluster = {
-    mean: DataPoint;
-    points: DataPoint[];
+export declare type DataCluster<DataType> = {
+    mean: DataType;
+    points: DataType[];
     totalError: number;
 };
-export declare function kMeans(data: DataPoint[], count?: number, iterations?: number): DataCluster[];
+export declare function kMeans<T extends number[]>(data: T[], count?: number, iterations?: number): DataCluster<T>[];
